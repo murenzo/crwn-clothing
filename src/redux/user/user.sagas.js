@@ -58,7 +58,6 @@ export function* isUserAuthenticated() {
   } catch (error) {
     yield put(signInFailure(error));
   }
-  yield console.log("Checking User Session");
 }
 
 export function* signOut() {
